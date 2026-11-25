@@ -8,7 +8,8 @@ function normalizeIngredient(value) {
         .toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
-        .trim();
+        .trim()
+        .replace(/\s+/g, " ");
 }
 
 function showMessage(message) {
@@ -74,11 +75,14 @@ searchForm.addEventListener("submit", (event) => {
     }
 
     const matches = recipes.map((recipe) => {
+        // Compara palavras completas: "arroz" também encontra "arroz cozido".
         const available = recipe.ingredients.filter((ingredient) =>
-            ingredients.includes(normalizeIngredient(ingredient))
+            ingredients.some((searchIngredient) =>
+                (" " + normalizeIngredient(ingredient) + " ").includes(" " + searchIngredient + " ")
+            )
         );
         const missing = recipe.ingredients.filter((ingredient) =>
-            !ingredients.includes(normalizeIngredient(ingredient))
+            !available.includes(ingredient)
         );
         return { ...recipe, available, missing, score: available.length };
     })
