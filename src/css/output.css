@@ -207,6 +207,11 @@
   }
 }
 @layer utilities {
+  .site-container {
+    max-width: 64rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -249,6 +254,13 @@
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
   }
+  .nav-link {
+    display: block;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-inline: 0.5rem;
+    padding-block: 0.75rem;
+  }
   .block {
     display: block;
   }
@@ -278,6 +290,14 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .form-input {
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-slate-400);
+    background-color: white;
+    padding: 0.75rem 1rem;
+    color: var(--color-ink);
   }
   .w-11 {
     width: calc(var(--spacing) * 11);
@@ -358,6 +378,43 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .preservation-note {
+    border-radius: 0.25rem;
+    background-color: var(--color-cream);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+    color: var(--color-slate-700);
+  }
+  .primary-button {
+    border-radius: 0.25rem;
+    background-color: var(--color-forest);
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    color: white;
+  }
+  .primary-button-small {
+    border-radius: 0.25rem;
+    background-color: var(--color-forest);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: white;
+  }
+  .content-card {
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-line);
+    background-color: white;
+    padding: 1rem;
+  }
+  .filter-button {
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-forest);
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+    font-weight: 500;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -487,6 +544,24 @@
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
+  .card-title {
+    font-size: 1.25rem;
+    line-height: calc(1.75 / 1.25);
+    font-weight: 600;
+    color: var(--color-forest);
+  }
+  .page-title {
+    font-size: 1.875rem;
+    line-height: calc(2.25 / 1.875);
+    font-weight: 700;
+    color: var(--color-forest);
+  }
+  .section-title {
+    font-size: 1.5rem;
+    line-height: calc(2 / 1.5);
+    font-weight: 700;
+    color: var(--color-forest);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -526,6 +601,11 @@
   .leading-tight {
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
+  }
+  .text-link {
+    font-weight: 500;
+    color: var(--color-forest);
+    text-decoration-line: underline;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);

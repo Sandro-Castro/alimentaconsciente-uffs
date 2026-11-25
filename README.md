@@ -104,6 +104,7 @@ A escolha dos tons de verde está relacionada à natureza, à alimentação e à
 - npm;
 - Git;
 - Navegador web;
+- Extensão Live Server do VS Code ou Python 3.
 
 ### 1. Instalar as dependências
 
@@ -115,15 +116,68 @@ npm install
 
 ### 2. Compilar o Tailwind CSS
 
+Na raiz do projeto, execute:
+
 ```bash
 npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch
 ```
 
-O comando gera o arquivo `src/css/output.css`, utilizado pelas páginas HTML.
+O comando gera o arquivo `src/css/output.css`, utilizado pelas páginas HTML, e recompila automaticamente os estilos sempre que houver alterações no código.
 
-### 3. Visualizar o projeto  
-  
-Abra o arquivo `src/index.html` no navegador.
+Mantenha esse comando em execução durante o desenvolvimento.
+
+### 3. Iniciar um servidor local
+
+O projeto utiliza JavaScript e a função `fetch()` para carregar os dados armazenados em arquivos JSON.
+
+Por questões de segurança, os navegadores podem bloquear essas requisições quando os arquivos HTML são abertos diretamente pelo sistema de arquivos (`file://`).
+
+Por esse motivo, é necessário executar o projeto por meio de um servidor HTTP local para garantir o funcionamento de todas as funcionalidades.
+
+Existem duas alternativas para executar o servidor.
+
+#### Opção 1 — Live Server (recomendada)
+
+1. Abra o projeto no Visual Studio Code.
+2. Acesse a aba de extensões (`Ctrl + Shift + X`).
+3. Pesquise pela extensão Live Server.
+4. Instale a extensão desenvolvida por Ritwick Dey.
+5. Abra o arquivo `src/index.html`.
+6. Clique com o botão direito sobre o arquivo.
+7. Selecione a opção `Open with Live Server`.
+
+O site será aberto automaticamente no navegador, e as alterações realizadas nos arquivos serão refletidas na página durante o desenvolvimento.
+
+#### Opção 2 — Servidor HTTP do Python
+
+Caso não esteja utilizando o Visual Studio Code ou prefira executar o servidor pelo terminal, é possível utilizar o servidor HTTP nativo do Python.
+
+Primeiramente, verifique se o Python está instalado:
+
+```bash
+python3 --version
+```
+
+Em outro terminal, na raiz do projeto, execute:
+
+```bash
+python3 -m http.server 5500 --directory src
+```
+
+Após iniciar o servidor, acesse:
+
+http://localhost:5500/
+
+Para encerrar o servidor, pressione `Ctrl + C` no terminal.
+
+### Observações
+
+- Utilize apenas uma das alternativas de servidor local.
+- O Tailwind CSS deve permanecer em execução durante o desenvolvimento para atualizar os estilos automaticamente.
+- O servidor local é utilizado apenas para disponibilizar os arquivos estáticos e permitir as requisições realizadas pelo JavaScript.
+- O projeto não possui backend nem banco de dados.
+- O Python é opcional e não constitui uma dependência da aplicação.
+
 
 ## Fluxo de contribuição
 
