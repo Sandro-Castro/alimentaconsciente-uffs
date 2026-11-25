@@ -4,117 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Dicas gerais de conservação e armazenamento de alimentos." name="description"/>
+    <meta name="description" content="Dicas gerais de conservação e armazenamento de alimentos.">
     <title>Conservação | AlimentaConsciente</title>
     <link rel="stylesheet" href="../css/output.css">
+    <script src="../js/main.js" defer></script>
 </head>
 
-<body>
-    <header>
-        <div>
-            <a aria-label="Página inicial do AlimentaConsciente" href="../index.html">
-                <span>AC</span>
+<body class="min-h-screen bg-soft text-ink">
+    <header class="border-b border-line bg-white">
+        <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-4">
+            <a href="../index.html" class="flex items-center gap-3" aria-label="Página inicial do AlimentaConsciente">
+                <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-forest text-sm font-bold text-white">AC</span>
                 <span>
-                    <span>AlimentaConsciente</span>
-                    <span>Consumo consciente começa em casa</span>
+                    <span class="block text-lg font-bold text-forest">AlimentaConsciente</span>
+                    <span class="block text-xs text-slate-600">Consumo consciente começa em casa</span>
                 </span>
             </a>
-            <button aria-controls="main-navigation" aria-expanded="false" data-menu-button=""
-                type="button">Menu</button>
-            <nav aria-label="Navegação principal" data-menu="" id="main-navigation">
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="./recipes.html">Receitas</a></li>
-                    <li><a href="./search-ingredients.html">Buscar ingredientes</a></li>
-                    <li><a aria-current="page" href="./food-preservation.html">Conservação</a></li>
-                    <li><a href="./sdg12.html">ODS 12</a></li>
-                    <li><a href="./about.html">Sobre</a></li>
+            <button type="button" data-menu-button aria-expanded="false" aria-controls="main-navigation" class="rounded-lg border border-line px-3 py-2 text-sm font-medium text-forest md:hidden">Menu</button>
+            <nav id="main-navigation" data-menu aria-label="Navegação principal" class="hidden w-full md:block md:w-auto">
+                <ul class="flex flex-col gap-1 md:flex-row md:flex-wrap md:items-center">
+                    <li><a href="../index.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Início</a></li>
+                    <li><a href="./recipes.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Receitas</a></li>
+                    <li><a href="./search-ingredients.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Buscar ingredientes</a></li>
+                    <li><a href="./food-preservation.html" aria-current="page" class="block rounded-lg px-3 py-2 text-sm font-medium bg-mint text-forest">Conservação</a></li>
+                    <li><a href="./sdg12.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">ODS 12</a></li>
+                    <li><a href="./about.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Sobre</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <h1>Conservação dos alimentos</h1>
-        <p>Cuidados gerais para armazenar alimentos e ajudar a evitar o descarte desnecessário. As orientações variam conforme o produto e suas condições.</p>
+    <main class="mx-auto max-w-6xl px-5 py-12">
+        <h1 class="text-3xl font-bold text-forest">Conservação dos alimentos</h1>
+        <p class="mt-3 max-w-3xl leading-relaxed text-slate-700">Cuidados gerais para armazenar alimentos e ajudar a evitar o descarte desnecessário. As orientações variam conforme o produto e suas condições.</p>
 
-        <section aria-labelledby="categories-heading">
-            <h2 id="categories-heading">Categorias</h2>
-
-            <div aria-label="Filtrar orientações">
-                <button aria-pressed="true" data-filter="all" type="button">Todas</button>
-                <button aria-pressed="false" data-filter="fruits" type="button">Frutas e hortaliças</button>
-                <button aria-pressed="false" data-filter="meat" type="button">Carnes</button>
-                <button aria-pressed="false" data-filter="dairy" type="button">Laticínios</button>
-                <button aria-pressed="false" data-filter="grains" type="button">Grãos</button>
-                <button aria-pressed="false" data-filter="bread" type="button">Pães</button>
-                <button aria-pressed="false" data-filter="leftovers" type="button">Sobras preparadas</button>
+        <section class="mt-8" aria-labelledby="categories-heading">
+            <h2 id="categories-heading" class="text-xl font-semibold">Categorias</h2>
+            <div class="mt-3 flex flex-wrap gap-2" aria-label="Filtrar orientações">
+                <button type="button" data-filter="all" aria-pressed="true" class="rounded-lg border border-green-300 bg-forest px-4 py-2 text-sm font-medium text-white">Todas</button>
+                <button type="button" data-filter="fruits" aria-pressed="false" class="rounded-lg border border-green-300 bg-white px-4 py-2 text-sm font-medium text-forest hover:bg-mint">Frutas e hortaliças</button>
+                <button type="button" data-filter="meat" aria-pressed="false" class="rounded-lg border border-green-300 bg-white px-4 py-2 text-sm font-medium text-forest hover:bg-mint">Carnes</button>
+                <button type="button" data-filter="dairy" aria-pressed="false" class="rounded-lg border border-green-300 bg-white px-4 py-2 text-sm font-medium text-forest hover:bg-mint">Laticínios</button>
+                <button type="button" data-filter="grains" aria-pressed="false" class="rounded-lg border border-green-300 bg-white px-4 py-2 text-sm font-medium text-forest hover:bg-mint">Grãos</button>
+                <button type="button" data-filter="bread" aria-pressed="false" class="rounded-lg border border-green-300 bg-white px-4 py-2 text-sm font-medium text-forest hover:bg-mint">Pães</button>
+                <button type="button" data-filter="leftovers" aria-pressed="false" class="rounded-lg border border-green-300 bg-white px-4 py-2 text-sm font-medium text-forest hover:bg-mint">Sobras preparadas</button>
             </div>
         </section>
 
-        <p>Atenção: o prazo de conservação depende do alimento e de suas condições. Siga o rótulo e as recomendações oficiais de segurança alimentar.</p>
+        <p class="mt-6 rounded-xl border border-green-200 bg-mint p-4 text-sm text-forest">Atenção: o prazo de conservação depende do alimento e de suas condições. Siga o rótulo e as recomendações oficiais de segurança alimentar.</p>
 
-        <section aria-label="Dicas por categoria" id="preservation-cards">
-            <article data-category="fruits">
-                <h3>Frutas e hortaliças</h3>
-                <h4>Como armazenar</h4>
-                <p>Separe por tipo e maturação. Verifique quais alimentos precisam de refrigeração.</p>
-                <h4>Cuidados de higiene</h4>
-                <p>Higienize seguindo orientações de órgãos de saúde.</p>
-                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+        <section id="preservation-cards" class="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3" aria-label="Dicas por categoria">
+
+            <article data-category="fruits" class="rounded-xl border border-line bg-white p-6">
+                <h3 class="text-xl font-semibold text-forest">Frutas e hortaliças</h3>
+                <h4 class="mt-4 font-semibold">Como armazenar</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Separe por tipo e maturação. Verifique quais alimentos precisam de refrigeração.</p>
+                <h4 class="mt-4 font-semibold">Cuidados de higiene</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Higienize seguindo orientações de órgãos de saúde.</p>
+                <p class="mt-4 rounded-lg bg-cream px-3 py-2 text-sm text-slate-700">Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
             </article>
 
-            <article data-category="meat">
-                <h3>Carnes</h3>
-                <h4>Como armazenar</h4>
-                <p>Armazene sob refrigeração ou congelamento, conforme as instruções da embalagem.</p>
-                <h4>Cuidados de higiene</h4>
-                <p>Evite contato com alimentos prontos e higienize utensílios e superfícies.</p>
-                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            <article data-category="meat" class="rounded-xl border border-line bg-white p-6">
+                <h3 class="text-xl font-semibold text-forest">Carnes</h3>
+                <h4 class="mt-4 font-semibold">Como armazenar</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Armazene sob refrigeração ou congelamento, conforme as instruções da embalagem.</p>
+                <h4 class="mt-4 font-semibold">Cuidados de higiene</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Evite contato com alimentos prontos e higienize utensílios e superfícies.</p>
+                <p class="mt-4 rounded-lg bg-cream px-3 py-2 text-sm text-slate-700">Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
             </article>
 
-            <article data-category="dairy">
-                <h3>Laticínios</h3>
-                <h4>Como armazenar</h4>
-                <p>Siga o rótulo e as condições indicadas após abrir a embalagem.</p>
-                <h4>Cuidados de higiene</h4>
-                <p>Mantenha as embalagens e os utensílios limpos.</p>
-                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            <article data-category="dairy" class="rounded-xl border border-line bg-white p-6">
+                <h3 class="text-xl font-semibold text-forest">Laticínios</h3>
+                <h4 class="mt-4 font-semibold">Como armazenar</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Siga o rótulo e as condições indicadas após abrir a embalagem.</p>
+                <h4 class="mt-4 font-semibold">Cuidados de higiene</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Mantenha as embalagens e os utensílios limpos.</p>
+                <p class="mt-4 rounded-lg bg-cream px-3 py-2 text-sm text-slate-700">Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
             </article>
 
-            <article data-category="grains">
-                <h3>Grãos</h3>
-                <h4>Como armazenar</h4>
-                <p>Guarde grãos secos em recipientes fechados, em local protegido de umidade.</p>
-                <h4>Cuidados de higiene</h4>
-                <p>Observe sinais de pragas e alterações no alimento.</p>
-                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            <article data-category="grains" class="rounded-xl border border-line bg-white p-6">
+                <h3 class="text-xl font-semibold text-forest">Grãos</h3>
+                <h4 class="mt-4 font-semibold">Como armazenar</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Guarde grãos secos em recipientes fechados, em local protegido de umidade.</p>
+                <h4 class="mt-4 font-semibold">Cuidados de higiene</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Observe sinais de pragas e alterações no alimento.</p>
+                <p class="mt-4 rounded-lg bg-cream px-3 py-2 text-sm text-slate-700">Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
             </article>
 
-            <article data-category="bread">
-                <h3>Pães</h3>
-                <h4>Como armazenar</h4>
-                <p>Proteja o pão da umidade e avalie o congelamento em porções.</p>
-                <h4>Cuidados de higiene</h4>
-                <p>Não consuma pão que apresente mofo.</p>
-                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            <article data-category="bread" class="rounded-xl border border-line bg-white p-6">
+                <h3 class="text-xl font-semibold text-forest">Pães</h3>
+                <h4 class="mt-4 font-semibold">Como armazenar</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Proteja o pão da umidade e avalie o congelamento em porções.</p>
+                <h4 class="mt-4 font-semibold">Cuidados de higiene</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Não consuma pão que apresente mofo.</p>
+                <p class="mt-4 rounded-lg bg-cream px-3 py-2 text-sm text-slate-700">Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
             </article>
 
-            <article data-category="leftovers">
-                <h3>Sobras preparadas</h3>
-                <h4>Como armazenar</h4>
-                <p>Guarde em recipientes limpos, fechados e refrigerados sem demora.</p>
-                <h4>Cuidados de higiene</h4>
-                <p>Evite contato com alimentos crus e use utensílios limpos.</p>
-                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            <article data-category="leftovers" class="rounded-xl border border-line bg-white p-6">
+                <h3 class="text-xl font-semibold text-forest">Sobras preparadas</h3>
+                <h4 class="mt-4 font-semibold">Como armazenar</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Guarde em recipientes limpos, fechados e refrigerados sem demora.</p>
+                <h4 class="mt-4 font-semibold">Cuidados de higiene</h4>
+                <p class="mt-1 leading-relaxed text-slate-700">Evite contato com alimentos crus e use utensílios limpos.</p>
+                <p class="mt-4 rounded-lg bg-cream px-3 py-2 text-sm text-slate-700">Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
             </article>
+
         </section>
     </main>
 
-    <footer>
-        <div>
-            <p><strong>AlimentaConsciente</strong> · Projeto acadêmico da UFFS</p>
-            <p>ODS 12 · Meta 12.3 · <a href="./about.html">Sobre o projeto</a></p>
+    <script src="../js/preservation.js" defer></script>
+
+    <footer class="mt-12 border-t border-line bg-white">
+        <div class="mx-auto flex max-w-6xl flex-col justify-between gap-3 px-5 py-8 text-sm text-slate-600 md:flex-row">
+            <p><strong class="text-forest">AlimentaConsciente</strong> · Projeto acadêmico da UFFS</p>
+            <p>ODS 12 · Meta 12.3 · <a class="font-medium text-forest underline" href="./about.html">Sobre o projeto</a></p>
         </div>
     </footer>
 

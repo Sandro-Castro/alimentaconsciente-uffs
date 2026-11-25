@@ -4,84 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Conheça a ODS 12 e a meta 12.3 da Agenda 2030." name="description"/>
+    <meta name="description" content="Informações sobre a ODS 12 e o desperdício de alimentos.">
     <title>ODS 12 | AlimentaConsciente</title>
     <link rel="stylesheet" href="../css/output.css">
+    <script src="../js/main.js" defer></script>
 </head>
 
-<body>
-    <header>
-        <div>
-            <a aria-label="Página inicial do AlimentaConsciente" href="../index.html">
-                <span>AC</span>
+<body class="min-h-screen bg-soft text-ink">
+    <header class="border-b border-line bg-white">
+        <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-4">
+            <a href="../index.html" class="flex items-center gap-3" aria-label="Página inicial do AlimentaConsciente">
+                <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-forest text-sm font-bold text-white">AC</span>
                 <span>
-                    <span>AlimentaConsciente</span>
-                    <span>Consumo consciente começa em casa</span>
+                    <span class="block text-lg font-bold text-forest">AlimentaConsciente</span>
+                    <span class="block text-xs text-slate-600">Consumo consciente começa em casa</span>
                 </span>
             </a>
-            <button aria-controls="main-navigation" aria-expanded="false" data-menu-button=""
-                type="button">Menu</button>
-            <nav aria-label="Navegação principal" data-menu="" id="main-navigation">
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="./recipes.html">Receitas</a></li>
-                    <li><a href="./search-ingredients.html">Buscar ingredientes</a></li>
-                    <li><a href="./food-preservation.html">Conservação</a></li>
-                    <li><a aria-current="page" href="./sdg12.html">ODS 12</a></li>
-                    <li><a href="./about.html">Sobre</a></li>
+            <button type="button" data-menu-button aria-expanded="false" aria-controls="main-navigation" class="rounded-lg border border-line px-3 py-2 text-sm font-medium text-forest md:hidden">Menu</button>
+            <nav id="main-navigation" data-menu aria-label="Navegação principal" class="hidden w-full md:block md:w-auto">
+                <ul class="flex flex-col gap-1 md:flex-row md:flex-wrap md:items-center">
+                    <li><a href="../index.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Início</a></li>
+                    <li><a href="./recipes.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Receitas</a></li>
+                    <li><a href="./search-ingredients.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Buscar ingredientes</a></li>
+                    <li><a href="./food-preservation.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Conservação</a></li>
+                    <li><a href="./sdg12.html" aria-current="page" class="block rounded-lg px-3 py-2 text-sm font-medium bg-mint text-forest">ODS 12</a></li>
+                    <li><a href="./about.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-ink hover:bg-mint hover:text-forest">Sobre</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <h1>ODS 12: consumo e produção responsáveis</h1>
-        <p>A Agenda 2030 reúne objetivos de desenvolvimento sustentável. A meta 12.3 trata das perdas e do desperdício de alimentos.</p>
+    <main class="mx-auto max-w-6xl px-5 py-12">
+        <h1 class="text-3xl font-bold text-forest">ODS 12: consumo e produção responsáveis</h1>
+        <p class="mt-3 max-w-3xl leading-relaxed text-slate-700">A Agenda 2030 reúne objetivos de desenvolvimento sustentável. A meta 12.3 trata das perdas e do desperdício de alimentos.</p>
 
-        <section aria-labelledby="goal-heading">
-            <h2 id="goal-heading">Meta 12.3</h2>
-            <blockquote>Até 2030, reduzir pela metade o desperdício de alimentos per capita mundial, nos níveis de varejo e do consumidor, e reduzir as perdas de alimentos ao longo das cadeias de produção e abastecimento, incluindo as perdas pós-colheita.</blockquote>
-            <p>Fonte: <a href="https://brasil.un.org/pt-br/91863-agenda-2030-para-o-desenvolvimento-sustentavel" rel="noopener noreferrer" target="_blank">Nações Unidas Brasil — Agenda 2030</a>.</p>
+        <section class="mt-8 rounded-xl border border-green-200 bg-mint p-6" aria-labelledby="goal-heading">
+            <h2 id="goal-heading" class="text-xl font-bold text-forest">Meta 12.3</h2>
+            <blockquote class="mt-3 leading-relaxed">Até 2030, reduzir pela metade o desperdício de alimentos per capita mundial, nos níveis de varejo e do consumidor, e reduzir as perdas de alimentos ao longo das cadeias de produção e abastecimento, incluindo as perdas pós-colheita.</blockquote>
+            <p class="mt-3 text-sm text-slate-700">Fonte: <a class="text-forest underline" href="https://brasil.un.org/pt-br/91863-agenda-2030-para-o-desenvolvimento-sustentavel" target="_blank" rel="noopener noreferrer">Nações Unidas Brasil — Agenda 2030</a>.</p>
         </section>
 
-        <section aria-labelledby="differences-heading">
-            <h2 id="differences-heading">Qual é a diferença?</h2>
+        <section class="mt-10" aria-labelledby="differences-heading">
+            <h2 id="differences-heading" class="text-2xl font-bold text-forest">Qual é a diferença?</h2>
 
-            <div>
-                <article>
-                    <h3>Perdas de alimentos</h3>
-                    <p>Ocorrem antes do varejo, em etapas como produção, pós-colheita, armazenamento e transporte.</p>
-                    <p>Exemplo: alimentos danificados durante o transporte.</p>
+            <div class="mt-5 grid gap-5 md:grid-cols-2">
+                <article class="rounded-xl border border-line bg-white p-6">
+                    <h3 class="text-xl font-semibold">Perdas de alimentos</h3>
+                    <p class="mt-3 leading-relaxed text-slate-700">Ocorrem antes do varejo, em etapas como produção, pós-colheita, armazenamento e transporte.</p>
+                    <p class="mt-3 text-sm text-slate-600">Exemplo: alimentos danificados durante o transporte.</p>
                 </article>
 
-                <article>
-                    <h3>Desperdício de alimentos</h3>
-                    <p>Ocorre no varejo, nos serviços de alimentação e no consumo final, inclusive nas residências.</p>
-                    <p>Exemplo: uma refeição preparada e descartada sem ser consumida.</p>
+                <article class="rounded-xl border border-line bg-white p-6">
+                    <h3 class="text-xl font-semibold">Desperdício de alimentos</h3>
+                    <p class="mt-3 leading-relaxed text-slate-700">Ocorre no varejo, nos serviços de alimentação e no consumo final, inclusive nas residências.</p>
+                    <p class="mt-3 text-sm text-slate-600">Exemplo: uma refeição preparada e descartada sem ser consumida.</p>
                 </article>
             </div>
 
-            <p>Conceitos baseados em FAO (2019) e UNEP (2024).</p>
+            <p class="mt-4 text-sm text-slate-600">Conceitos baseados em FAO (2019) e UNEP (2024).</p>
         </section>
 
-        <section aria-labelledby="home-actions-heading">
-            <h2 id="home-actions-heading">O que podemos fazer em casa?</h2>
-
-            <ul>
-                <li>Planejar as compras</li>
-                <li>Aproveitar as sobras</li>
-                <li>Conservar corretamente</li>
-                <li>Preparar porções adequadas</li>
+        <section class="mt-10" aria-labelledby="home-actions-heading">
+            <h2 id="home-actions-heading" class="text-2xl font-bold text-forest">O que podemos fazer em casa?</h2>
+            <ul class="mt-5 flex flex-wrap gap-3">
+                <li class="rounded-lg border border-line bg-white px-5 py-3">Planejar as compras</li>
+                <li class="rounded-lg border border-line bg-white px-5 py-3">Aproveitar as sobras</li>
+                <li class="rounded-lg border border-line bg-white px-5 py-3">Conservar corretamente</li>
+                <li class="rounded-lg border border-line bg-white px-5 py-3">Preparar porções adequadas</li>
             </ul>
-
-            <p>O AlimentaConsciente aborda somente o consumo doméstico. Não pretende resolver perdas agrícolas ou problemas de distribuição.</p>
+            <p class="mt-6 leading-relaxed text-slate-700">O AlimentaConsciente aborda somente o consumo doméstico. Não pretende resolver perdas agrícolas ou problemas de distribuição.</p>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <p><strong>AlimentaConsciente</strong> · Projeto acadêmico da UFFS</p>
-            <p>ODS 12 · Meta 12.3 · <a href="./about.html">Sobre o projeto</a></p>
+    <footer class="mt-12 border-t border-line bg-white">
+        <div class="mx-auto flex max-w-6xl flex-col justify-between gap-3 px-5 py-8 text-sm text-slate-600 md:flex-row">
+            <p><strong class="text-forest">AlimentaConsciente</strong> · Projeto acadêmico da UFFS</p>
+            <p>ODS 12 · Meta 12.3 · <a class="font-medium text-forest underline" href="./about.html">Sobre o projeto</a></p>
         </div>
     </footer>
 
