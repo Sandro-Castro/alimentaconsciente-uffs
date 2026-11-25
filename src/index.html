@@ -4,97 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Receitas e dicas para prevenir o desperdício doméstico de alimentos." name="description" />
+    <meta name="description" content="Receitas e dicas para prevenir o desperdício doméstico de alimentos.">
     <title>Início | AlimentaConsciente</title>
-    <link href="./css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/output.css">
 </head>
 
-<body>
-    <header>
-        <div>
-            <a aria-label="Página inicial do AlimentaConsciente" href="./index.html">
-                <span>AC</span>
-                <span>
-                    <span>AlimentaConsciente</span>
-                    <span>Consumo consciente começa em casa</span>
-                </span>
-            </a>
-            <button aria-controls="main-navigation" aria-expanded="false" data-menu-button="" type="button">Menu</button>
-            <nav aria-label="Navegação principal" data-menu="" id="main-navigation">
-                <ul>
-                    <li><a aria-current="page" href="./index.html">Início</a></li>
-                    <li><a href="./pages/recipes.html">Receitas</a></li>
-                    <li><a href="./pages/search-ingredients.html">Buscar ingredientes</a></li>
-                    <li><a href="./pages/food-preservation.html">Conservação</a></li>
-                    <li><a href="./pages/sdg12.html">ODS 12</a></li>
-                    <li><a href="./pages/about.html">Sobre</a></li>
-                </ul>
-            </nav>
+<body class="min-h-screen bg-white text-ink">
+    <header class="border-b border-line bg-white">
+        <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-5">
+            <a href="./index.html" class="text-2xl font-bold text-forest">AlimentaConsciente</a>
+            <p class="text-sm text-slate-600">Projeto acadêmico · UFFS</p>
         </div>
+
+        <nav id="main-navigation" data-menu aria-label="Navegação principal" class="border-t border-line bg-white">
+            <ul class="mx-auto flex max-w-5xl flex-wrap gap-x-4 px-4 text-sm">
+                <li><a href="./index.html" aria-current="page"
+                        class="block border-b-2 border-forest px-2 py-3 font-bold text-forest">Início</a></li>
+                <li><a href="./pages/recipes.html"
+                        class="block border-b-2 border-transparent px-2 py-3 hover:text-forest hover:border-forest">Receitas</a>
+                </li>
+                <li><a href="./pages/search-ingredients.html"
+                        class="block border-b-2 border-transparent px-2 py-3 hover:text-forest hover:border-forest">Buscar
+                        ingredientes</a></li>
+                <li><a href="./pages/food-preservation.html"
+                        class="block border-b-2 border-transparent px-2 py-3 hover:text-forest hover:border-forest">Conservação</a>
+                </li>
+                <li><a href="./pages/sdg12.html"
+                        class="block border-b-2 border-transparent px-2 py-3 hover:text-forest hover:border-forest">ODS
+                        12</a></li>
+                <li><a href="./pages/about.html"
+                        class="block border-b-2 border-transparent px-2 py-3 hover:text-forest hover:border-forest">Sobre</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="main-content">
-        <section>
+    <main id="main-content" class="mx-auto max-w-5xl px-4">
+        <section class="grid items-center gap-6 border-b border-line py-8 md:grid-cols-2">
             <div>
-                <div>
-                    <p>Alimentação consciente</p>
-                    <h1>Menos desperdício começa na sua cozinha.</h1>
-                    <p>Descubra receitas para aproveitar o que você já tem e dicas para conservar os alimentos por mais
-                        tempo.</p>
-                    <div>
-                        <a href="./pages/search-ingredients.html">Buscar receitas</a>
-                        <a href="./pages/food-preservation.html">Dicas de conservação</a>
-                    </div>
-                </div>
-                <aside>
-                    <p>Por que esse tema importa?</p>
-                    <p>1,05 bilhão</p>
-                    <p>de toneladas de alimentos foram desperdiçadas no mundo em 2022, considerando domicílios, serviços
-                        de alimentação e varejo.</p>
-                    <p>Fonte: UNEP, Food Waste Index Report 2024. <a
-                            href="https://www.unep.org/resources/publication/food-waste-index-report-2024"
-                            rel="noopener noreferrer" target="_blank">Consultar relatório</a></p>
-                </aside>
+                <h1 class="text-3xl font-bold text-forest">Aproveite melhor os alimentos em casa</h1>
+                <p class="mt-4 leading-relaxed">O AlimentaConsciente reúne receitas de aproveitamento, dicas de
+                    conservação e informações sobre o desperdício doméstico de alimentos.</p>
+                <p class="mt-3 text-sm text-slate-600">Projeto acadêmico alinhado à ODS 12 e à meta 12.3.</p>
+                <a href="./pages/recipes.html"
+                    class="mt-5 inline-block rounded-sm bg-forest px-4 py-2 font-medium text-white hover:bg-forest-dark">Explorar
+                    receitas</a>
             </div>
+            <figure class="bg-cream">
+                <img src="./images/vegetables.jpg" alt="Variedade de verduras e legumes"
+                    class="h-56 w-full object-cover sm:h-64">
+                <figcaption class="px-2 py-1 text-xs text-slate-600">Foto: Scott Bauer / USDA · <a
+                        href="https://commons.wikimedia.org/wiki/File:Vegetables.jpg" class="underline">Fonte</a>
+                </figcaption>
+            </figure>
         </section>
-        <section aria-labelledby="start-heading">
-            <h2 id="start-heading">Por onde começar?</h2>
-            <p>Pequenas escolhas no dia a dia podem ajudar a aproveitar melhor os alimentos.</p>
+
+        <section class="grid gap-6 border-b border-line py-7 md:grid-cols-2" aria-labelledby="waste-heading">
             <div>
-                <article>
-                    <span aria-hidden="true">🍲</span>
-                    <h3>Receitas de aproveitamento</h3>
-                    <p>Ideias simples para transformar ingredientes e sobras em novas refeições.</p>
-                    <a href="./pages/recipes.html">Ver receitas</a>
-                </article>
-                <article>
-                    <span aria-hidden="true">🥕</span>
-                    <h3>Busque por ingredientes</h3>
-                    <p>Informe o que tem em casa e encontre sugestões compatíveis.</p>
-                    <a href="./pages/search-ingredients.html">Fazer uma busca</a>
-                </article>
-                <article>
-                    <span aria-hidden="true">🥬</span>
-                    <h3>Conserve com cuidado</h3>
-                    <p>Conheça cuidados gerais de armazenamento e higiene.</p>
-                    <a href="./pages/food-preservation.html">Ver orientações</a>
-                </article>
+                <h2 id="waste-heading" class="text-2xl font-bold text-forest">Por que falar de desperdício?</h2>
+                <p class="mt-3 leading-relaxed">Planejar as compras, conservar os alimentos e aproveitar as sobras são
+                    maneiras de evitar descartes desnecessários no dia a dia.</p>
+                <p class="mt-3"><a href="./pages/sdg12.html" class="font-medium text-forest underline">Conheça a ODS
+                        12</a></p>
             </div>
+            <aside class="border-l-4 border-forest bg-cream p-4">
+                <h3 class="font-bold">Desperdício de alimentos no mundo</h3>
+                <p class="mt-2 text-2xl font-bold text-forest">1,05 bilhão de toneladas</p>
+                <p class="mt-2 text-sm leading-relaxed">Desperdiçadas em 2022 nos domicílios, serviços de alimentação e
+                    varejo, incluindo partes não comestíveis.</p>
+                <p class="mt-3 text-xs text-slate-600">Fonte: UNEP, Food Waste Index Report 2024. <a
+                        class="text-forest underline"
+                        href="https://www.unep.org/resources/publication/food-waste-index-report-2024">Consultar
+                        relatório</a></p>
+            </aside>
         </section>
-        <section>
-            <div>
-                <h2>Alinhado à ODS 12</h2>
-                <p>O projeto busca contribuir para o consumo responsável, com foco no desperdício doméstico de
-                    alimentos.</p>
-                <a href="./pages/sdg12.html">Entenda a meta 12.3</a>
+
+        <section class="py-7" aria-labelledby="start-heading">
+            <h2 id="start-heading" class="text-2xl font-bold text-forest">Por onde começar?</h2>
+            <!-- md:grid-cols-3 cria três colunas a partir do tamanho médio de tela. -->
+            <div class="mt-4 grid gap-4 md:grid-cols-3">
+                <article class="border border-line p-4">
+                    <h3 class="text-lg font-bold">Receitas de aproveitamento</h3>
+                    <p class="mt-2">Ideias para utilizar os alimentos que você já tem.</p>
+                    <a class="mt-3 inline-block text-forest underline" href="./pages/recipes.html">Ver receitas</a>
+                </article>
+                <article class="border border-line p-4">
+                    <h3 class="text-lg font-bold">Buscar por ingredientes</h3>
+                    <p class="mt-2">Informe o que está disponível em casa e encontre sugestões.</p>
+                    <a class="mt-3 inline-block text-forest underline" href="./pages/search-ingredients.html">Buscar
+                        receitas</a>
+                </article>
+                <article class="border border-line p-4">
+                    <h3 class="text-lg font-bold">Conservação de alimentos</h3>
+                    <p class="mt-2">Consulte orientações de armazenamento e higiene.</p>
+                    <a class="mt-3 inline-block text-forest underline" href="./pages/food-preservation.html">Ver
+                        orientações</a>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <p><strong>AlimentaConsciente</strong> · Projeto acadêmico da UFFS</p>
-            <P>ODS 12 · Meta 12.3 · <a href="./pages/about.html">Sobre o projeto</a></P>
+    <footer class="mt-8 border-t border-line bg-cream">
+        <div class="mx-auto flex max-w-5xl flex-col justify-between gap-3 px-4 py-5 text-sm text-slate-600 md:flex-row">
+            <p><strong class="text-forest">AlimentaConsciente</strong> · Projeto acadêmico da UFFS</p>
+            <p>ODS 12 · Meta 12.3 · <a class="font-medium text-forest underline" href="./pages/about.html">Sobre o
+                    projeto</a></p>
         </div>
     </footer>
 </body>
