@@ -1,1 +1,117 @@
 @import "tailwindcss";
+
+@source "../";
+
+@theme {
+    --color-forest: #166534;
+    --color-forest-dark: #14532D;
+    --color-mint: #DCFCE7;
+    --color-cream: #FFFBEB;
+    --color-ink: #1F2937;
+    --color-soft: #F8FAFC;
+    --color-line: #E2E8F0;
+}
+
+@layer base {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+        outline: 3px solid var(--color-forest);
+        outline-offset: 3px;
+    }
+}
+
+/* Classes utilitárias próprias, conforme o conteúdo da Aula 15. */
+@utility site-container {
+    max-width: 64rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+@utility page-title {
+    font-size: 1.875rem;
+    line-height: calc(2.25 / 1.875);
+    font-weight: 700;
+    color: var(--color-forest);
+}
+
+@utility section-title {
+    font-size: 1.5rem;
+    line-height: calc(2 / 1.5);
+    font-weight: 700;
+    color: var(--color-forest);
+}
+
+@utility card-title {
+    font-size: 1.25rem;
+    line-height: calc(1.75 / 1.25);
+    font-weight: 600;
+    color: var(--color-forest);
+}
+
+@utility content-card {
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-line);
+    background-color: white;
+    padding: 1rem;
+}
+
+@utility text-link {
+    font-weight: 500;
+    color: var(--color-forest);
+    text-decoration-line: underline;
+}
+
+@utility primary-button {
+    border-radius: 0.25rem;
+    background-color: var(--color-forest);
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    color: white;
+}
+
+@utility primary-button-small {
+    border-radius: 0.25rem;
+    background-color: var(--color-forest);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+@utility nav-link {
+    display: block;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-inline: 0.5rem;
+    padding-block: 0.75rem;
+}
+
+@utility filter-button {
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-forest);
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+    font-weight: 500;
+}
+
+@utility form-input {
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-slate-400);
+    background-color: white;
+    padding: 0.75rem 1rem;
+    color: var(--color-ink);
+}
+
+@utility preservation-note {
+    border-radius: 0.25rem;
+    background-color: var(--color-cream);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+    color: var(--color-slate-700);
+}

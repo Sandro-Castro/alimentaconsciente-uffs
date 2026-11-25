@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name": "Arroz com cenoura e ovo",
+        "category": "Refeições",
+        "ingredients": [
+            "arroz cozido",
+            "cenoura",
+            "ovo"
+        ],
+        "description": "Uma ideia simples para usar arroz já preparado.",
+        "steps": "Aqueça o arroz já refrigerado, refogue a cenoura e cozinhe o ovo completamente antes de servir."
+    },
+    {
+        "id": 2,
+        "name": "Torrada com tomate",
+        "category": "Lanches",
+        "ingredients": [
+            "pão",
+            "tomate",
+            "azeite"
+        ],
+        "description": "Aproveite o pão que ainda está próprio para consumo.",
+        "steps": "Toste o pão, corte o tomate e finalize com azeite."
+    },
+    {
+        "id": 3,
+        "name": "Panqueca de banana",
+        "category": "Lanches",
+        "ingredients": [
+            "banana",
+            "ovo",
+            "aveia"
+        ],
+        "description": "Uma opção para usar bananas maduras.",
+        "steps": "Amasse a banana, misture com ovo e aveia e cozinhe bem dos dois lados."
+    },
+    {
+        "id": 4,
+        "name": "Sopa de legumes",
+        "category": "Refeições",
+        "ingredients": [
+            "batata",
+            "cenoura",
+            "abobrinha",
+            "água"
+        ],
+        "description": "Reúna legumes disponíveis em uma preparação quente.",
+        "steps": "Higienize os legumes, corte-os e cozinhe em água até ficarem macios."
+    },
+    {
+        "id": 5,
+        "name": "Farofa de talos",
+        "category": "Aproveitamento",
+        "ingredients": [
+            "talos de couve",
+            "farinha de mandioca",
+            "azeite"
+        ],
+        "description": "Uma forma de utilizar talos comestíveis e higienizados.",
+        "steps": "Higienize os talos comestíveis, pique, refogue e adicione a farinha de mandioca."
+    },
+    {
+        "id": 6,
+        "name": "Salada de feijão",
+        "category": "Refeições",
+        "ingredients": [
+            "feijão cozido",
+            "tomate",
+            "cebola",
+            "azeite"
+        ],
+        "description": "Uma opção com feijão cozido armazenado adequadamente.",
+        "steps": "Use feijão cozido mantido sob refrigeração adequada e misture aos vegetais higienizados."
+    }
+]
