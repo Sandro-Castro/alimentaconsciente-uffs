@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="Busque receitas com ingredientes que já estão em casa." name="description"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Busque receitas com ingredientes que já estão em casa." name="description" />
     <title>Buscar ingredientes | AlimentaConsciente</title>
     <link rel="stylesheet" href="../css/output.css">
 </head>
@@ -34,10 +34,29 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
-        <h1>Sobre o projeto</h1>
-        <p>Conteúdo previsto para esta página.</p>
+        <h1>Buscar receitas por ingredientes</h1>
+        <p>Informe o que você tem em casa para encontrar receitas compatíveis. Esta busca é uma versão inicial que
+            compara os nomes dos ingredientes cadastrados.</p>
+        <!-- label associa um texto descritivo ao campo; required evita o envio vazio no navegador. -->
+        <form id="ingredient-search-form">
+            <label for="ingredients">Quais ingredientes você possui?</label>
+            <div>
+                <input id="ingredients" name="ingredients" placeholder="Ex.: arroz cozido, cenoura, ovo" required=""
+                    type="text" />
+                <button type="submit">Buscar receitas</button>
+            </div>
+            <p>Separe os ingredientes por vírgulas. Exemplo: arroz cozido, cenoura, ovo.</p>
+        </form>
+        <section aria-labelledby="results-heading">
+            <h2 id="results-heading">Resultados</h2>
+            <p>Os resultados serão ordenados pelo maior número de ingredientes em comum.</p>
+            <!-- aria-live permite que leitores de tela anunciem a atualização realizada pelo JavaScript. -->
+            <div aria-live="polite" id="search-results">
+                <p>Digite seus ingredientes e clique em “Buscar receitas”.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
