@@ -1,76 +1,653 @@
 [
     {
         "id": 1,
-        "name": "Arroz com cenoura e ovo",
-        "category": "Refeições",
-        "ingredients": [
+        "slug": "rice-balls",
+        "name": "Bolinho de arroz com legumes",
+        "category": "Sobras de refeições",
+        "description": "Transforme arroz cozido e pequenas porções de legumes em bolinhos.",
+        "preparationTime": 30,
+        "servings": "12 unidades",
+        "reusedIngredients": [
             "arroz cozido",
-            "cenoura",
-            "ovo"
+            "legumes cozidos"
         ],
-        "description": "Uma ideia simples para usar arroz já preparado.",
-        "steps": "Aqueça o arroz já refrigerado, refogue a cenoura e cozinhe o ovo completamente antes de servir."
+        "ingredients": [
+            {
+                "name": "arroz cozido",
+                "amount": "2 xícaras"
+            },
+            {
+                "name": "legumes cozidos",
+                "amount": "½ xícara, picados"
+            },
+            {
+                "name": "ovo",
+                "amount": "1 unidade"
+            },
+            {
+                "name": "farinha de trigo",
+                "amount": "½ xícara, aproximadamente"
+            },
+            {
+                "name": "cheiro-verde",
+                "amount": "2 colheres de sopa"
+            },
+            {
+                "name": "sal",
+                "amount": "a gosto"
+            },
+            {
+                "name": "óleo",
+                "amount": "para fritar"
+            }
+        ],
+        "steps": [
+            "Misture o arroz, os legumes, o ovo e o cheiro-verde em uma tigela.",
+            "Acrescente farinha aos poucos até a massa firmar; ajuste o sal.",
+            "Modele porções pequenas com duas colheres.",
+            "Frite em pequenas levas até dourar e cozinhar completamente o centro. Retire e escorra."
+        ],
+        "tip": "Use pequenas porções de legumes cozidos que sobraram da refeição.",
+        "safety": "Sobras devem ter sido refrigeradas prontamente e mantidas em condições seguras. Se houver dúvida sobre o armazenamento, descarte. Para arroz cozido refrigerado, adote a orientação mais conservadora da Food Standards Agency: resfrie rapidamente, idealmente em uma hora, e use em até 24 horas. Não reaqueça mais de uma vez.",
+        "source": {
+            "name": "Panelinha — bolinho de arroz (reaproveitamento)",
+            "url": "https://panelinha.com.br/receita/bolinho-de-arroz-reaproveitamento"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
     },
     {
         "id": 2,
-        "name": "Torrada com tomate",
-        "category": "Lanches",
-        "ingredients": [
-            "pão",
-            "tomate",
-            "azeite"
+        "slug": "chicken-pie",
+        "name": "Torta de frango e legumes",
+        "category": "Sobras de refeições",
+        "description": "Reúna sobras de frango e legumes em uma torta de liquidificador.",
+        "preparationTime": 55,
+        "servings": "6 porções",
+        "reusedIngredients": [
+            "frango cozido",
+            "legumes cozidos"
         ],
-        "description": "Aproveite o pão que ainda está próprio para consumo.",
-        "steps": "Toste o pão, corte o tomate e finalize com azeite."
+        "ingredients": [
+            {
+                "name": "frango cozido",
+                "amount": "1½ xícara, desfiado"
+            },
+            {
+                "name": "legumes cozidos",
+                "amount": "1 xícara, picados"
+            },
+            {
+                "name": "ovo",
+                "amount": "2 unidades"
+            },
+            {
+                "name": "leite",
+                "amount": "1 xícara"
+            },
+            {
+                "name": "óleo",
+                "amount": "¼ de xícara"
+            },
+            {
+                "name": "farinha de trigo",
+                "amount": "1½ xícara"
+            },
+            {
+                "name": "fermento químico",
+                "amount": "1 colher de sopa"
+            },
+            {
+                "name": "sal",
+                "amount": "a gosto"
+            }
+        ],
+        "steps": [
+            "Preaqueça o forno a 180 °C e unte uma forma pequena.",
+            "Bata ovos, leite, óleo, farinha e sal; misture o fermento por último.",
+            "Espalhe metade da massa, distribua o frango e os legumes e cubra com a massa restante.",
+            "Asse por 35 a 45 minutos, até dourar e a massa estar completamente cozida."
+        ],
+        "tip": "Combine vegetais cozidos de pequenas porções diferentes.",
+        "safety": "Sobras devem ter sido refrigeradas prontamente e mantidas em condições seguras. Se houver dúvida sobre o armazenamento, descarte.",
+        "source": {
+            "name": "Panelinha — torta de liquidificador com sobras de frango",
+            "url": "https://panelinha.com.br/blog/ritalobo/post/marmita-de-chef-da-maristella-sodre"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
     },
     {
         "id": 3,
-        "name": "Panqueca de banana",
-        "category": "Lanches",
-        "ingredients": [
-            "banana",
-            "ovo",
-            "aveia"
+        "slug": "bean-tutu",
+        "name": "Tutu de feijão",
+        "category": "Sobras de refeições",
+        "description": "Dê um novo uso ao feijão cozido com uma preparação cremosa.",
+        "preparationTime": 25,
+        "servings": "4 porções",
+        "reusedIngredients": [
+            "feijão cozido"
         ],
-        "description": "Uma opção para usar bananas maduras.",
-        "steps": "Amasse a banana, misture com ovo e aveia e cozinhe bem dos dois lados."
+        "ingredients": [
+            {
+                "name": "feijão cozido",
+                "amount": "2 xícaras com caldo"
+            },
+            {
+                "name": "farinha de mandioca",
+                "amount": "¼ de xícara, aproximadamente"
+            },
+            {
+                "name": "cebola",
+                "amount": "½ unidade"
+            },
+            {
+                "name": "alho",
+                "amount": "2 dentes"
+            },
+            {
+                "name": "azeite",
+                "amount": "1 colher de sopa"
+            },
+            {
+                "name": "sal",
+                "amount": "a gosto"
+            }
+        ],
+        "steps": [
+            "Amasse o feijão com parte do caldo.",
+            "Refogue cebola e alho picados no azeite.",
+            "Junte o feijão e aqueça bem, mexendo.",
+            "Adicione a farinha aos poucos até engrossar e cozinhe alguns minutos; ajuste o sal."
+        ],
+        "tip": "Feijão que cozinhou demais, mas foi conservado com segurança, é adequado para a textura de tutu.",
+        "safety": "Sobras devem ter sido refrigeradas prontamente e mantidas em condições seguras. Se houver dúvida sobre o armazenamento, descarte.",
+        "source": {
+            "name": "Panelinha — tutu de feijão feito com feijão que cozinhou demais",
+            "url": "https://panelinha.com.br/blog/reaproveite/post/tutu-de-feijao-feito-com-o-feijao-que-cozinhou-demais"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
     },
     {
         "id": 4,
-        "name": "Sopa de legumes",
-        "category": "Refeições",
-        "ingredients": [
-            "batata",
-            "cenoura",
-            "abobrinha",
-            "água"
+        "slug": "banana-cake",
+        "name": "Bolo de banana madura",
+        "category": "Frutas maduras",
+        "description": "Bananas maduras ajudam a adoçar e dar textura à massa.",
+        "preparationTime": 50,
+        "servings": "8 fatias",
+        "reusedIngredients": [
+            "banana"
         ],
-        "description": "Reúna legumes disponíveis em uma preparação quente.",
-        "steps": "Higienize os legumes, corte-os e cozinhe em água até ficarem macios."
+        "ingredients": [
+            {
+                "name": "banana",
+                "amount": "3 unidades maduras"
+            },
+            {
+                "name": "ovo",
+                "amount": "2 unidades"
+            },
+            {
+                "name": "óleo",
+                "amount": "¼ de xícara"
+            },
+            {
+                "name": "açúcar",
+                "amount": "⅓ de xícara"
+            },
+            {
+                "name": "farinha de trigo",
+                "amount": "1½ xícara"
+            },
+            {
+                "name": "fermento químico",
+                "amount": "1 colher de sopa"
+            },
+            {
+                "name": "canela",
+                "amount": "1 colher de chá"
+            }
+        ],
+        "steps": [
+            "Preaqueça o forno a 180 °C e unte uma forma pequena.",
+            "Amasse as bananas e misture com ovos, óleo e açúcar.",
+            "Incorpore a farinha e a canela; adicione o fermento por último.",
+            "Asse por cerca de 35 a 45 minutos, até o centro estar assado e o palito sair limpo."
+        ],
+        "tip": "Use bananas maduras antes que estraguem; o açúcar pode ser ajustado em testes futuros.",
+        "safety": "Use frutas maduras ainda próprias para consumo; descarte as deterioradas.",
+        "source": {
+            "name": "Panelinha — bolo de banana",
+            "url": "https://panelinha.com.br/receita/bolo-de-banana"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
     },
     {
         "id": 5,
-        "name": "Farofa de talos",
-        "category": "Aproveitamento",
-        "ingredients": [
-            "talos de couve",
-            "farinha de mandioca",
-            "azeite"
+        "slug": "apple-jam",
+        "name": "Geleia de maçã com canela",
+        "category": "Frutas maduras",
+        "description": "Transforme maçãs maduras em um doce de consumo refrigerado.",
+        "preparationTime": 35,
+        "servings": "1 pote pequeno",
+        "reusedIngredients": [
+            "maçã"
         ],
-        "description": "Uma forma de utilizar talos comestíveis e higienizados.",
-        "steps": "Higienize os talos comestíveis, pique, refogue e adicione a farinha de mandioca."
+        "ingredients": [
+            {
+                "name": "maçã",
+                "amount": "3 unidades maduras"
+            },
+            {
+                "name": "açúcar",
+                "amount": "¼ de xícara"
+            },
+            {
+                "name": "limão",
+                "amount": "1 colher de sopa de suco"
+            },
+            {
+                "name": "canela",
+                "amount": "½ colher de chá"
+            },
+            {
+                "name": "água",
+                "amount": "¼ de xícara"
+            }
+        ],
+        "steps": [
+            "Lave as maçãs, retire sementes e partes não comestíveis e corte em cubos.",
+            "Leve à panela com água, açúcar e suco de limão.",
+            "Cozinhe em fogo baixo, mexendo até amaciar e reduzir. Amasse para obter a textura desejada.",
+            "Misture a canela e transfira para recipiente limpo; refrigere prontamente."
+        ],
+        "tip": "Use maçãs maduras em boas condições e prepare apenas uma pequena porção.",
+        "safety": "Não é conserva estável fora da geladeira. Mantenha refrigerada, consuma em breve e descarte se houver deterioração.",
+        "source": {
+            "name": "Panelinha — geleia de maçã com ameixa (inspiração para adaptação com canela)",
+            "url": "https://panelinha.com.br/receita/geleia-de-maca-com-ameixa"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
     },
     {
         "id": 6,
-        "name": "Salada de feijão",
-        "category": "Refeições",
-        "ingredients": [
-            "feijão cozido",
-            "tomate",
-            "cebola",
-            "azeite"
+        "slug": "fruit-smoothie",
+        "name": "Vitamina de banana e manga",
+        "category": "Frutas maduras",
+        "description": "Frutas maduras congeladas podem virar uma bebida cremosa.",
+        "preparationTime": 10,
+        "servings": "2 copos",
+        "reusedIngredients": [
+            "banana",
+            "manga"
         ],
-        "description": "Uma opção com feijão cozido armazenado adequadamente.",
-        "steps": "Use feijão cozido mantido sob refrigeração adequada e misture aos vegetais higienizados."
+        "ingredients": [
+            {
+                "name": "banana",
+                "amount": "1 unidade madura"
+            },
+            {
+                "name": "manga",
+                "amount": "1 xícara de polpa madura"
+            },
+            {
+                "name": "leite",
+                "amount": "1 xícara"
+            }
+        ],
+        "steps": [
+            "Lave as frutas antes de descascar.",
+            "Corte a banana em rodelas e congele previamente em recipiente limpo, se desejar uma bebida mais cremosa.",
+            "Bata a banana, a manga e o leite no liquidificador até ficar homogêneo.",
+            "Sirva imediatamente."
+        ],
+        "tip": "Congele frutas em boas condições antes de estragarem; o tempo de congelamento não está incluído.",
+        "safety": "Use frutas maduras ainda próprias para consumo; descarte as deterioradas. Mantenha o leite refrigerado e observe sua validade.",
+        "source": {
+            "name": "Panelinha — smoothie de banana e manga (adaptação com leite)",
+            "url": "https://panelinha.com.br/receita/smoothie-de-banana-e-manga"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
+    },
+    {
+        "id": 7,
+        "slug": "stem-farofa",
+        "name": "Farofa de talos de couve",
+        "category": "Aproveitamento integral",
+        "description": "Utilize talos de couve que costumam ser separados das folhas.",
+        "preparationTime": 20,
+        "servings": "4 porções",
+        "reusedIngredients": [
+            "talos de couve"
+        ],
+        "ingredients": [
+            {
+                "name": "talos de couve",
+                "amount": "1 xícara, picados"
+            },
+            {
+                "name": "farinha de mandioca",
+                "amount": "1 xícara"
+            },
+            {
+                "name": "cebola",
+                "amount": "½ unidade"
+            },
+            {
+                "name": "alho",
+                "amount": "1 dente"
+            },
+            {
+                "name": "azeite",
+                "amount": "2 colheres de sopa"
+            },
+            {
+                "name": "sal",
+                "amount": "a gosto"
+            }
+        ],
+        "steps": [
+            "Lave e higienize os talos; corte em pedaços pequenos.",
+            "Refogue cebola e alho no azeite.",
+            "Adicione os talos e cozinhe até ficarem macios.",
+            "Misture a farinha, mexa até dourar levemente e ajuste o sal."
+        ],
+        "tip": "Reserve os talos comestíveis ao preparar a couve, em vez de descartá-los.",
+        "safety": "Use apenas partes comestíveis identificadas e devidamente higienizadas; não utilize partes desconhecidas ou deterioradas.",
+        "source": {
+            "name": "Panelinha — farofa de talo de couve",
+            "url": "https://panelinha.com.br/receita/farofa-de-talo-de-couve"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
+    },
+    {
+        "id": 8,
+        "slug": "carrot-top-pesto",
+        "name": "Pesto de folhas de cenoura",
+        "category": "Aproveitamento integral",
+        "description": "Aproveite as ramas comestíveis da cenoura em um molho verde.",
+        "preparationTime": 15,
+        "servings": "4 porções",
+        "reusedIngredients": [
+            "folhas de cenoura"
+        ],
+        "ingredients": [
+            {
+                "name": "folhas de cenoura",
+                "amount": "1 xícara, sem talos grossos"
+            },
+            {
+                "name": "manjericão",
+                "amount": "½ xícara"
+            },
+            {
+                "name": "alho",
+                "amount": "1 dente"
+            },
+            {
+                "name": "azeite",
+                "amount": "¼ de xícara"
+            },
+            {
+                "name": "sementes de abóbora",
+                "amount": "2 colheres de sopa"
+            },
+            {
+                "name": "limão",
+                "amount": "1 colher de sopa de suco"
+            },
+            {
+                "name": "sal",
+                "amount": "a gosto"
+            }
+        ],
+        "steps": [
+            "Selecione folhas de cenoura próprias para consumo, lave e higienize adequadamente.",
+            "Retire os talos mais grossos e seque as folhas.",
+            "Bata folhas, manjericão, alho, sementes, limão e azeite até formar uma pasta.",
+            "Ajuste o sal e sirva com massas ou pão."
+        ],
+        "tip": "A Embrapa identifica as folhas da cenoura como comestíveis; utilize apenas ramas de origem alimentar.",
+        "safety": "Use apenas partes comestíveis identificadas e devidamente higienizadas; não utilize partes desconhecidas ou deterioradas. Prepare para consumo imediato; não armazene à temperatura ambiente.",
+        "source": {
+            "name": "Embrapa — Manual do educador Sem Desperdício, pesto de rama de cenoura",
+            "url": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1116008/1/ManualdoeducadorSemDesperdicio.pdf"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
+    },
+    {
+        "id": 9,
+        "slug": "vegetable-stem-soup",
+        "name": "Sopa de legumes e talos",
+        "category": "Aproveitamento integral",
+        "description": "Use legumes disponíveis e talos comestíveis para uma refeição quente.",
+        "preparationTime": 40,
+        "servings": "4 porções",
+        "reusedIngredients": [
+            "talos de couve",
+            "cenoura",
+            "abobrinha"
+        ],
+        "ingredients": [
+            {
+                "name": "talos de couve",
+                "amount": "½ xícara, picados"
+            },
+            {
+                "name": "cenoura",
+                "amount": "1 unidade"
+            },
+            {
+                "name": "abobrinha",
+                "amount": "1 unidade"
+            },
+            {
+                "name": "batata",
+                "amount": "2 unidades"
+            },
+            {
+                "name": "cebola",
+                "amount": "½ unidade"
+            },
+            {
+                "name": "alho",
+                "amount": "2 dentes"
+            },
+            {
+                "name": "azeite",
+                "amount": "1 colher de sopa"
+            },
+            {
+                "name": "água",
+                "amount": "1 litro"
+            },
+            {
+                "name": "sal",
+                "amount": "a gosto"
+            }
+        ],
+        "steps": [
+            "Lave e higienize os vegetais; pique os talos e corte os legumes em cubos.",
+            "Refogue a cebola e o alho no azeite.",
+            "Junte batata, cenoura, talos e água; cozinhe até começarem a amaciar.",
+            "Adicione a abobrinha e cozinhe até todos os ingredientes ficarem macios. Ajuste o sal e sirva."
+        ],
+        "tip": "Aproveite pequenas porções de legumes frescos que precisam ser utilizados.",
+        "safety": "Use apenas partes comestíveis identificadas e devidamente higienizadas; não utilize partes desconhecidas ou deterioradas.",
+        "source": {
+            "name": "Secretaria de Saúde de Goiás — Alimentação Saudável e Sustentável, sopa de talos",
+            "url": "https://goias.gov.br/saude/wp-content/uploads/sites/34/2016/01/alimentacao-saudavel-e-sustentavel-orientacoes-e-sugestoes-de-atividades-9f4.pdf"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
+    },
+    {
+        "id": 10,
+        "slug": "bruschetta",
+        "name": "Bruschetta de pão amanhecido",
+        "category": "Aproveitamento de pães",
+        "description": "Pão ressecado vira uma base crocante para tomates maduros.",
+        "preparationTime": 20,
+        "servings": "6 fatias",
+        "reusedIngredients": [
+            "pão",
+            "tomate"
+        ],
+        "ingredients": [
+            {
+                "name": "pão",
+                "amount": "6 fatias de pão amanhecido"
+            },
+            {
+                "name": "tomate",
+                "amount": "2 unidades maduras"
+            },
+            {
+                "name": "alho",
+                "amount": "1 dente"
+            },
+            {
+                "name": "azeite",
+                "amount": "2 colheres de sopa"
+            },
+            {
+                "name": "manjericão",
+                "amount": "folhas a gosto"
+            },
+            {
+                "name": "sal",
+                "amount": "a gosto"
+            }
+        ],
+        "steps": [
+            "Lave e higienize tomates e manjericão; pique os tomates.",
+            "Tempere o tomate com azeite, manjericão e sal.",
+            "Toste as fatias de pão no forno ou frigideira e esfregue o alho na superfície.",
+            "Distribua a mistura de tomate sobre as fatias e sirva."
+        ],
+        "tip": "Pão francês ressecado pode substituir o pão italiano.",
+        "safety": "Use somente pão ressecado em boas condições. Se houver mofo, descarte o pão inteiro.",
+        "source": {
+            "name": "Receitas Nestlé — brusqueta fácil",
+            "url": "https://www.receitasnestle.com.br/receitas/brusqueta-facil"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
+    },
+    {
+        "id": 11,
+        "slug": "bread-pudding",
+        "name": "Pudim de pão",
+        "category": "Aproveitamento de pães",
+        "description": "Reaproveite pão amanhecido em uma sobremesa assada.",
+        "preparationTime": 75,
+        "servings": "8 porções",
+        "reusedIngredients": [
+            "pão"
+        ],
+        "ingredients": [
+            {
+                "name": "pão",
+                "amount": "2 pães franceses amanhecidos"
+            },
+            {
+                "name": "leite",
+                "amount": "500 ml"
+            },
+            {
+                "name": "ovo",
+                "amount": "3 unidades"
+            },
+            {
+                "name": "açúcar",
+                "amount": "¾ de xícara (½ para a massa e ¼ para a calda)"
+            },
+            {
+                "name": "água",
+                "amount": "2 colheres de sopa"
+            },
+            {
+                "name": "canela",
+                "amount": "½ colher de chá"
+            }
+        ],
+        "steps": [
+            "Preaqueça o forno a 180 °C. Umedeça os pães cortados no leite.",
+            "Prepare a calda com o açúcar reservado e água até caramelizar; distribua com cuidado em uma forma própria para forno.",
+            "Bata os pães umedecidos, ovos, açúcar restante e canela até obter uma mistura homogênea.",
+            "Despeje na forma e asse em banho-maria até firmar e cozinhar completamente, por cerca de 50 a 60 minutos.",
+            "Deixe amornar, refrigere e desenforme depois de frio."
+        ],
+        "tip": "Utilize pães ressecados que ainda estejam seguros. O tempo não inclui o resfriamento.",
+        "safety": "Use somente pão ressecado em boas condições. Se houver mofo, descarte o pão inteiro. Mantenha o pudim refrigerado; tome cuidado com a calda quente.",
+        "source": {
+            "name": "Panelinha — pudim de pão (adaptação simples)",
+            "url": "https://panelinha.com.br/receita/pudim-de-pao"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
+    },
+    {
+        "id": 12,
+        "slug": "croutons",
+        "name": "Croutons caseiros",
+        "category": "Aproveitamento de pães",
+        "description": "Transforme pedaços de pão em acompanhamento crocante.",
+        "preparationTime": 15,
+        "servings": "2 xícaras",
+        "reusedIngredients": [
+            "pão"
+        ],
+        "ingredients": [
+            {
+                "name": "pão",
+                "amount": "2 xícaras, em cubos"
+            },
+            {
+                "name": "azeite",
+                "amount": "2 colheres de sopa"
+            },
+            {
+                "name": "orégano",
+                "amount": "1 colher de chá"
+            },
+            {
+                "name": "sal",
+                "amount": "a gosto"
+            }
+        ],
+        "steps": [
+            "Corte o pão em cubos de tamanho semelhante.",
+            "Aqueça o azeite em uma frigideira.",
+            "Junte o pão e os temperos; mexa até os cubos dourarem e ficarem crocantes.",
+            "Deixe esfriar em local limpo e utilize em sopas ou saladas."
+        ],
+        "tip": "Use as pontas de pães ou pequenos pedaços que não seriam servidos.",
+        "safety": "Use somente pão ressecado em boas condições. Se houver mofo, descarte o pão inteiro.",
+        "source": {
+            "name": "Panelinha — croûtons de frigideira",
+            "url": "https://panelinha.com.br/receita/croutons-de-frigideira"
+        },
+        "image": "",
+        "imageCredit": "",
+        "imageSource": ""
     }
 ]
