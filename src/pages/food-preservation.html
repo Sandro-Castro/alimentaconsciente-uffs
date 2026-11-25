@@ -36,7 +36,79 @@
 
     <main>
         <h1>Conservação dos alimentos</h1>
-        <p>Conteúdo previsto para esta página.</p>
+        <p>Cuidados gerais para armazenar alimentos e ajudar a evitar o descarte desnecessário. As orientações variam conforme o produto e suas condições.</p>
+
+        <section aria-labelledby="categories-heading">
+            <h2 id="categories-heading">Categorias</h2>
+
+            <div aria-label="Filtrar orientações">
+                <button aria-pressed="true" data-filter="all" type="button">Todas</button>
+                <button aria-pressed="false" data-filter="fruits" type="button">Frutas e hortaliças</button>
+                <button aria-pressed="false" data-filter="meat" type="button">Carnes</button>
+                <button aria-pressed="false" data-filter="dairy" type="button">Laticínios</button>
+                <button aria-pressed="false" data-filter="grains" type="button">Grãos</button>
+                <button aria-pressed="false" data-filter="bread" type="button">Pães</button>
+                <button aria-pressed="false" data-filter="leftovers" type="button">Sobras preparadas</button>
+            </div>
+        </section>
+
+        <p>Atenção: o prazo de conservação depende do alimento e de suas condições. Siga o rótulo e as recomendações oficiais de segurança alimentar.</p>
+
+        <section aria-label="Dicas por categoria" id="preservation-cards">
+            <article data-category="fruits">
+                <h3>Frutas e hortaliças</h3>
+                <h4>Como armazenar</h4>
+                <p>Separe por tipo e maturação. Verifique quais alimentos precisam de refrigeração.</p>
+                <h4>Cuidados de higiene</h4>
+                <p>Higienize seguindo orientações de órgãos de saúde.</p>
+                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            </article>
+
+            <article data-category="meat">
+                <h3>Carnes</h3>
+                <h4>Como armazenar</h4>
+                <p>Armazene sob refrigeração ou congelamento, conforme as instruções da embalagem.</p>
+                <h4>Cuidados de higiene</h4>
+                <p>Evite contato com alimentos prontos e higienize utensílios e superfícies.</p>
+                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            </article>
+
+            <article data-category="dairy">
+                <h3>Laticínios</h3>
+                <h4>Como armazenar</h4>
+                <p>Siga o rótulo e as condições indicadas após abrir a embalagem.</p>
+                <h4>Cuidados de higiene</h4>
+                <p>Mantenha as embalagens e os utensílios limpos.</p>
+                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            </article>
+
+            <article data-category="grains">
+                <h3>Grãos</h3>
+                <h4>Como armazenar</h4>
+                <p>Guarde grãos secos em recipientes fechados, em local protegido de umidade.</p>
+                <h4>Cuidados de higiene</h4>
+                <p>Observe sinais de pragas e alterações no alimento.</p>
+                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            </article>
+
+            <article data-category="bread">
+                <h3>Pães</h3>
+                <h4>Como armazenar</h4>
+                <p>Proteja o pão da umidade e avalie o congelamento em porções.</p>
+                <h4>Cuidados de higiene</h4>
+                <p>Não consuma pão que apresente mofo.</p>
+                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            </article>
+
+            <article data-category="leftovers">
+                <h3>Sobras preparadas</h3>
+                <h4>Como armazenar</h4>
+                <p>Guarde em recipientes limpos, fechados e refrigerados sem demora.</p>
+                <h4>Cuidados de higiene</h4>
+                <p>Evite contato com alimentos crus e use utensílios limpos.</p>
+                <p>Prazos específicos devem ser conferidos em fontes oficiais e nos rótulos.</p>
+            </article>
+        </section>
     </main>
 
     <footer>
